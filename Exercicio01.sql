@@ -19,9 +19,11 @@ INSERT INTO tb_colaboradores (nome, cargo, departamento, salario, data_admissao)
 ('Lorena', 'Desenvolvedora', 'TI', 12000.00, '2020-12-05');
 
 
-SELECT * FROM tb_colaboradores where salario > 2000;
+SELECT * FROM tb_colaboradores 
+WHERE salario > 2000;
 
-SELECT * FROM tb_colaboradores where salario < 2000;
+SELECT * FROM tb_colaboradores 
+WHERE salario < 2000;
 
 UPDATE tb_colaboradores 
 SET salario = 15000 
