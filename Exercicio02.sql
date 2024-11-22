@@ -13,11 +13,23 @@ CREATE TABLE tb_produtos (
 
 INSERT INTO tb_produtos (nome, descricao, preco, categoria, estoque)
 VALUES
-('Camiseta Básica', 'Camiseta de algodão simples', 45.90, 'Roupas', 100),
-('Tênis Esportivo', 'Tênis confortável para corrida', 299.99, 'Calçados', 50),
-('Relógio de Pulso', 'Relógio elegante de metal', 799.90, 'Acessórios', 30),
-('Smartphone X100', 'Smartphone com 128GB de armazenamento', 1500.00, 'Eletrônicos', 200),
-('Jaqueta de Couro', 'Jaqueta de couro genuíno', 450.00, 'Roupas', 70),
-('Cadeira Gamer', 'Cadeira ergonômica para jogos', 899.00, 'Móveis', 20),
-('Fone Bluetooth', 'Fone de ouvido com cancelamento de ruído', 250.00, 'Eletrônicos', 150),
-('Mochila de Viagem', 'Mochila grande para viagens', 350.00, 'Acessórios', 80);
+('Console PlayStation 5', 'Console de última geração para jogos', 4999.99, 'Jogos', 150),
+('Xbox Series X', 'Console da nova geração com gráficos 4K', 4899.00, 'Jogos', 120),
+('Controle Xbox Elite', 'Controle de alto desempenho para Xbox', 849.00, 'Jogos', 80),
+('FIFA 24', 'Jogo de futebol para PlayStation e Xbox', 299.99, 'Jogos', 200),
+('Minecraft', 'Jogo de construção e exploração mundial', 129.90, 'Jogos', 250),
+('The Legend of Zelda: Tears of the Kingdom', 'Jogo de aventura exclusivo para Nintendo Switch', 399.99, 'Jogos', 100),
+('Cadeira Gamer DXRacer', 'Cadeira ergonômica especialmente para jogos', 1200.00, 'Jogos', 50),
+('Headset Razer Kraken', 'Headset com som surround e microfone', 499.00, 'Jogos', 120);
+
+
+SELECT * FROM tb_produtos 
+WHERE  preco > 500;
+
+SELECT * FROM tb_produtos 
+WHERE  preco < 500;
+
+UPDATE tb_produtos
+SET preco = 55.90
+WHERE nome = "Xbox Series X";
+
